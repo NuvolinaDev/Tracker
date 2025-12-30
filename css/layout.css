@@ -1,0 +1,63 @@
+body {
+  background-color: rgb(10, 10, 10);
+  color: rgb(190, 190, 190);
+  display: flex;
+  justify-content: center;
+}
+#main {
+  margin: 20px;
+  padding: 15px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 11px;
+  text-align: center;
+  min-width: 350px;
+  box-shadow: 0 0 60px 4px rgba(130, 255, 249, 0.265);
+}
+#movies {
+  gap: 20px;
+}
+.sectionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height;
+  background-color: rgb(10, 10, 10);
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  min-width: 100px;
+}
+.section {
+  width: 350px;
+}
+/* Default (collapsed): full rounding */
+.section .divBtn {
+  border-radius: 11px;
+}
+
+/* Expanded: split rounding */
+.section.active .divBtn {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.section.active .sectionContent {
+  max-height: fit-content; /* enough for the Add button */
+}
+.platformBadge {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+.platformBadge.pc {
+  background: #3a7;
+}
+.platformBadge.xbox {
+  background: #107c10;
+}
+.platformBadge.playstation {
+  background: #00439c;
+}
+.platformBadge.nintendo {
+  background: #e60012;
+}

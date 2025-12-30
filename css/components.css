@@ -1,0 +1,75 @@
+.divBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  max-width: 350px;
+  min-height: 50px;
+  background-color: rgb(10, 10, 10);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.divBtn:hover {
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+}
+.addBtn {
+  padding: 8px 14px;
+  background-color: rgb(50, 50, 50);
+  color: rgb(190, 190, 190);
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.addBtn:hover {
+  background-color: rgb(70, 70, 70);
+}
+#cancelBtn {
+  background-color: rgb(100, 0, 0);
+  color: white;
+}
+#cancelBtn:hover {
+  background-color: rgb(150, 0, 0);
+}
+#confirmBtn {
+  background-color: rgb(0, 100, 0);
+  color: white;
+}
+#confirmBtn:hover {
+  background-color: rgb(0, 150, 0);
+}
+.itemList {
+  padding: 5px;
+}
+.itemList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  margin: 4px 0;
+  background-color: rgb(20, 20, 20);
+  border-radius: 6px;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: rgb(160, 60, 60);
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.itemList li:hover .deleteBtn {
+  opacity: 1;
+}
+
+.deleteBtn:hover {
+  color: rgb(220, 80, 80);
+}

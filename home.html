@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Life Tracker</title>
+  </head>
+  <body>
+    <main id="main">
+      <h1>Life Tracker</h1>
+
+      <div class="section" data-key="movies">
+        <div class="divBtn">movies</div>
+        <div class="sectionContent">
+          <ul class="itemList"></ul>
+          <button class="addBtn">Add</button>
+        </div>
+      </div>
+
+      <div class="section" data-key="manga">
+        <div class="divBtn" id="manga">manga</div>
+        <div class="sectionContent">
+          <ul class="itemList"></ul>
+          <button class="addBtn">Add</button>
+        </div>
+      </div>
+
+      <div class="section" data-key="books">
+        <div class="divBtn" id="books">books</div>
+        <div class="sectionContent">
+          <ul class="itemList"></ul>
+          <button class="addBtn">Add</button>
+        </div>
+      </div>
+
+      <div class="section" data-key="games">
+        <div class="divBtn" id="games">games</div>
+        <div class="sectionContent">
+          <ul class="itemList"></ul>
+          <button class="addBtn">Add</button>
+        </div>
+      </div>
+
+      <div class="section" data-key="toBuy">
+        <div class="divBtn" id="toBuy">to buy</div>
+        <div class="sectionContent">
+          <ul class="itemList"></ul>
+          <button class="addBtn">Add</button>
+        </div>
+      </div>
+
+      <div class="section" data-key="vacation">
+        <div class="divBtn" id="vacation">vacation</div>
+        <div class="sectionContent">
+          <ul class="itemList"></ul>
+          <button class="addBtn">Add</button>
+        </div>
+      </div>
+    </main>
+
+    <div id="modalOverlay" class="modal hidden">
+      <div class="modalBox">
+        <h2>Add item</h2>
+
+        <input type="text" id="modalInput" placeholder="Title" />
+        <p id="modalError" class="modalError hidden"></p>
+
+        <div class="modalActions">
+          <button id="cancelBtn">Cancel</button>
+          <button id="confirmBtn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/items.js"></script>
+    <script src="js/sections.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
